@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/bootstrap-3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/alertify.js-0.3.11/themes/alertify.core.css">
   <link rel="stylesheet" href="assets/alertify.js-0.3.11/themes/alertify.default.css">
+  <link rel="stylesheet" href="assets/ekko-lightbox-5.3.0/ekko-lightbox.css">
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
@@ -106,6 +107,7 @@
 <script src="assets/js/jquery-3.3.1.js"></script>
 <script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <script src="assets/alertify.js-0.3.11/src/alertify.js"></script>
+<script src="assets/ekko-lightbox-5.3.0/ekko-lightbox.min.js"></script>
 <script src="assets/js/functions.js"></script>
 </body>
 </html>

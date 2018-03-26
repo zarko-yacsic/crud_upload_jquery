@@ -31,7 +31,12 @@ if(mysqli_num_rows($rs) > 0){
           <li><?php
           $file_path = 'uploads/' . $row['archivo_dir'] . '/' . $row['archivo'];
           if(file_exists($file_path)){
-            echo '<a href="' . $file_path . '" data-toggle="tooltip" data-placement="bottom" title="Ver archivo" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a>';
+            if($row['archivo_type'] == 'image/jpeg' || $row['archivo_type'] == 'image/png'){
+              echo '<a href="' . $file_path . '" data-toggle="lightbox" data-title="' . $row['archivo'] . '"><span data-toggle="tooltip" data-placement="bottom" title="Ver imagen" target="_blank"><span class="glyphicon glyphicon-picture"></span></span></a>';
+            }
+            else{
+              echo '<a href="' . $file_path . '" data-toggle="tooltip" data-placement="bottom" title="Ver archivo" target="_blank"><span class="glyphicon glyphicon-download-alt"></span></a>';
+            }
           }
           else{
             echo '<span class="disabled_file"><span class="glyphicon glyphicon-download-alt"></span></span>';
